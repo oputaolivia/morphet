@@ -11,7 +11,7 @@ export const readfile = async (fileName) =>{
             message: msg
         });
         if (answer){
-            fs.writeFile(fileName,'', 'utf-8');
+            fs.createFile(fileName);
             console.log(chalk.greenBright.bold(`${fileName} created`))
         };
     }else{
