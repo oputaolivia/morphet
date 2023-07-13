@@ -19,7 +19,7 @@ export const wrtFile = async (fileName, content) =>{
         };
     }
    }catch(err){
-    console.log(err);
+    console.log("Can not run command");
    }
 };
 
