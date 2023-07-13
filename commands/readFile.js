@@ -20,7 +20,7 @@ export const readfile = async (fileName) =>{
         })
     }
    }catch(err){
-    console.log(err);
+    console.log("Can not run command");
    }
 };
 
