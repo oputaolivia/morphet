@@ -11,7 +11,7 @@ export const crtFile = async (fileName) =>{
         console.log(chalk.redBright.bold('File Exists'))
     }
    }catch(err){
-    console.log(err);
+    console.log("Can not run command");
    }
 };
 
