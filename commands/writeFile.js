@@ -2,26 +2,25 @@ import fs from 'fs-extra';
 import chalk from 'chalk';
 import confirm from '@inquirer/confirm';
 
-export const readfile = async (fileName) =>{
+export const wrtFile = async (fileName, content) =>{
    try{
     const fileExist = fs.existsSync(fileName);
-    if (!fileExist){
+    if (fileExist){
+        await fs.writeFile(fileName,content, 'utf8');
+        console.log(chalk.greenBright.bold(`${fileName} Edited`))
+    }else{
         const msg = chalk.yellowBright.bold(`${fileName} doesn't exist. \n Do you want to create it? `)
         const answer = await confirm({ 
             message: msg
         });
         if (answer){
-            fs.createFile(fileName);
+            await fs.writeFile(fileName,content, 'utf8');
             console.log(chalk.greenBright.bold(`${fileName} created`))
         };
-    }else{
-        fs.readFile(fileName, 'utf-8',(err, content)=>{
-        console.log(content)
-        })
     }
    }catch(err){
     console.log("Can not run command");
    }
 };
 
-export default readfile
+export default wrtFile
