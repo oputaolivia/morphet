@@ -3,13 +3,16 @@ import chalk from 'chalk';
 
 export const crtFile = async (fileName) =>{
    try{
-    const fileExist = fs.existsSync(fileName);
-    if (!fileExist){
-        await fs.createFile(fileName)
-        console.log(chalk.greenBright.bold(`${fileName} created`))
-    }else{
-        console.log(chalk.redBright.bold('File Exists'))
-    }
+    fileName.forEach(async (file) => {
+        const fileExist = fs.existsSync(file);
+        if (!fileExist){
+            await fs.createFile(file)
+            console.log(chalk.greenBright.bold(`${file} created`))
+        }else{
+            console.log(chalk.redBright.bold('File Exists'))
+        }
+    });
+    
    }catch(err){
     console.log("Can not run command");
    }
