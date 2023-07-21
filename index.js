@@ -10,7 +10,8 @@ import { wrtFile } from './commands/writeFile.js';
 import {delFile} from './commands/deleteFile.js';
 import {copyfile} from './commands/copyFile.js';
 import {openfile} from './commands/openFile.js';
-
+import {lookUp} from './commands/searchFile.js';
+import {movefile} from './commands/moveFile.js';
 
 // Implementing commands
 program.command(`create`)
@@ -42,4 +43,16 @@ program.command(`open`)
     .description('Open file with default application')
     .action(openfile)
 
+program.command(`lookup`)
+    .argument('<fileName...>', 'File(s) to lookup')
+    .description('Search file(s) by name')
+    .action(lookUp)
+
+program.command(`move`)
+    .argument(`<fileDir>`, 'File original path')
+    .argument(`<destinationDir>`, 'File new directory')
+    .description('Move file')
+    .action(movefile)
+
+    
 program.parse(process.argv);
