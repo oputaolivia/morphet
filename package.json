@@ -1,9 +1,9 @@
 {
-  "name": "morph",
+  "name": "filemorph",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "morph": "./index.js"
+    "filemorph": "./index.js"
   },
   "type": "module",
   "scripts": {
