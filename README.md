@@ -1,7 +1,7 @@
-# MORPH
+# MORPHIX
 
 ## Introduction
-Morph is a Node.js command-line interface (CLI) tool designed to simplify file manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type.
+Morphix is a Node.js command-line interface (CLI) tool designed to simplify file manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type.
 
 ## Features
 - Create an empty file of any type
@@ -12,6 +12,7 @@ Morph is a Node.js command-line interface (CLI) tool designed to simplify file m
 - Delete files from the file system.
 - Open files using the default application.
 - Search if file exists
+- List files in a directory
 
 ## Requirements
 - Node.js installed on your machine.
@@ -66,6 +67,10 @@ morph lookup <file...>
 morph read <file>
 ```
 
+9. List File(s):
+```
+morph list <folder Path>
+```
 ## Conclusion
 By utilizing this CLI Tool, you can simplify file handling and optimize the performance of your web applications. Caching frequently accessed data and employing file manipulation commands can significantly improve response times and enhance overall user experience.
 
