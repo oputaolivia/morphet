@@ -12,6 +12,7 @@ import {copyfile} from './commands/copyFile.js';
 import {openfile} from './commands/openFile.js';
 import {lookUp} from './commands/searchFile.js';
 import {movefile} from './commands/moveFile.js';
+import {listfile} from './commands/listFiles.js';
 
 // Implementing commands
 program.command(`create`)
@@ -53,6 +54,11 @@ program.command(`move`)
     .argument(`<destinationDir>`, 'File new directory')
     .description('Move file')
     .action(movefile)
+
+program.command(`list`)
+    .argument('<folder>','Path of directory in which to view content' )
+    .description('List all available files in a directory')
+    .action(listfile)
 
     
 program.parse(process.argv);

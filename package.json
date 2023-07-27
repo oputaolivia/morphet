@@ -1,9 +1,9 @@
 {
-  "name": "filemorph",
+  "name": "morphix",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "filemorph": "./index.js"
+    "morphix": "./index.js"
   },
   "type": "module",
   "scripts": {
