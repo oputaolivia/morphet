@@ -4,7 +4,7 @@
 import { program } from 'commander';
 
 // Importing commands
-import {crtFile}  from '../morph/commands/createFile.js';
+import {crtFile}  from './commands/createFile.js';
 import {readfile} from './commands/readFile.js';
 import { wrtFile } from './commands/writeFile.js';
 import {delFile} from './commands/deleteFile.js';
@@ -13,8 +13,10 @@ import {openfile} from './commands/openFile.js';
 import {lookUp} from './commands/searchFile.js';
 import {movefile} from './commands/moveFile.js';
 import {listfile} from './commands/listFiles.js';
+import {crtFolder} from './commands/createFolder.js';
+import {delFolder} from './commands/deleteFolder.js';
 
-// Implementing commands
+// Implementing File commands
 program.command(`create`)
     .argument('<fileName...>', 'File(s) to be Created')
     .description('Create empty file(s)')
@@ -60,5 +62,15 @@ program.command(`list`)
     .description('List all available files in a directory')
     .action(listfile)
 
+// Implementing Folder commands
+program.command(`dir`)
+    .argument(`<dirs...>`, 'Path of directory(s) to be created')
+    .description('Create directory(s)')
+    .action(crtFolder)
+
+program.command(`deldir`)
+    .argument(`<dirs...>`, 'Path of directory(s) to be deleted')
+    .description('Delete directory(s)')
+    .action(delFolder)
     
 program.parse(process.argv);
