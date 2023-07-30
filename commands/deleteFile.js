@@ -15,8 +15,7 @@ export const delFile = async (fileName)=>{
         });
         
     }catch(err){
-        console.log(err)
-        // console.log("Can not run command")
+        console.log("Can not run command")
     }
 }
 
