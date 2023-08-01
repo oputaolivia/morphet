@@ -1,9 +1,11 @@
 # MORPHIX
+<img src="https://github.com/oputaolivia/morphix/assets/72948572/e32b1a7d-6495-4ec3-a586-ccd352526cac" alt="morphix" width="150" height="150">
 
 ## Introduction
-Morphix is a Node.js command-line interface (CLI) tool designed to simplify file manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type.
+Morphix is a Node.js command-line interface (CLI) tool designed to simplify file & directory manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type as well as create and delete directories.
 
 ## Features
+### File Features
 - Create an empty file of any type
 - Write in an empty file/ Overwrite a file
 - Read the content of a file
@@ -14,10 +16,15 @@ Morphix is a Node.js command-line interface (CLI) tool designed to simplify file
 - Search if file exists
 - List files in a directory
 
+### Directory Features
+
 ## Requirements
 - Node.js installed on your machine.
 
-## Installation
+## Installation Guide
+Morphix can be installed via `npm` or `cloning the GitHub repo`
+
+### GitHub
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Install dependencies using the following command:
@@ -26,6 +33,11 @@ Morphix is a Node.js command-line interface (CLI) tool designed to simplify file
 npm install
 ```
 
+### NPM
+Install the dependency from npm registery with the following command:
+```
+npm i morphix
+```
 ## Usage
 To use the CLI tool, open your terminal and navigate to the project directory. The CLI provides the following commands:
 1. Create File(s):
@@ -72,6 +84,6 @@ morph read <file>
 morph list <folder Path>
 ```
 ## Conclusion
-By utilizing this CLI Tool, you can simplify file handling and optimize the performance of your web applications. Caching frequently accessed data and employing file manipulation commands can significantly improve response times and enhance overall user experience.
+By utilizing this CLI Tool, you can simplify file & directory handling and optimize the performance of your web applications.
 
 Feel free to explore and customize this tool based on your specific requirements. If you encounter any issues or have suggestions for improvement, please feel free to contribute or report them on the GitHub repository.
