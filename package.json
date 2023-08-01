@@ -1,9 +1,9 @@
 {
-  "name": "morphix",
+  "name": "morphet",
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "morphix": "./index.js"
+    "morphet": "./index.js"
   },
   "type": "module",
   "scripts": {
