@@ -1,8 +1,8 @@
-# MORPHIX
+# MORPHET
 <img src="https://github.com/oputaolivia/morphix/assets/72948572/02d3bb61-6dc8-43ce-8a4c-bda3465a8d78" alt="morphet" width="150" height="150">
 
 ## Introduction
-Morphix is a Node.js command-line interface (CLI) tool designed to simplify file & directory manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type as well as create and delete directories.
+Morphet is a Node.js command-line interface (CLI) tool designed to simplify file & directory manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type as well as create and delete directories.
 
 ## Features
 ### File Features
@@ -24,7 +24,7 @@ Morphix is a Node.js command-line interface (CLI) tool designed to simplify file
 - Node.js installed on your machine.
 
 ## Installation Guide
-Morphix can be installed via `npm` or `cloning the GitHub repo`
+Morphet can be installed via `npm` or `cloning the GitHub repo`
 
 ### GitHub
 1. Clone this repository to your local machine.
@@ -38,7 +38,7 @@ npm install
 ### NPM
 Install the dependency via npm registery with the following command:
 ```
-npm install morphix
+npm i -g Morphet
 ```
 ## Usage
 To use the CLI tool, open your terminal and navigate to the project directory. The CLI provides the following commands:
