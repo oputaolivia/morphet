@@ -85,6 +85,17 @@ morph read <file>
 ```
 morph list <folder Path>
 ```
+
+10. Create Directory(s):
+```
+morph dir <Directory Path(s)>
+```
+
+11. Delete Directory(s):
+```
+morph deldir <Directory Path(s)>
+```
+
 ## Conclusion
 By utilizing this CLI Tool, you can simplify file & directory handling and optimize the performance of your web applications.
 
