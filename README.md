@@ -17,6 +17,8 @@ Morphix is a Node.js command-line interface (CLI) tool designed to simplify file
 - List files in a directory
 
 ### Directory Features
+- Create directory
+- Delete directory
 
 ## Requirements
 - Node.js installed on your machine.
@@ -34,9 +36,9 @@ npm install
 ```
 
 ### NPM
-Install the dependency from npm registery with the following command:
+Install the dependency via npm registery with the following command:
 ```
-npm i morphix
+npm install morphix
 ```
 ## Usage
 To use the CLI tool, open your terminal and navigate to the project directory. The CLI provides the following commands:
