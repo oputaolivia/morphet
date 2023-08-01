@@ -1,5 +1,5 @@
 # MORPHIX
-<img src="https://github.com/oputaolivia/morphix/assets/72948572/e32b1a7d-6495-4ec3-a586-ccd352526cac" alt="morphix" width="150" height="150">
+<img src="https://github.com/oputaolivia/morphix/assets/72948572/02d3bb61-6dc8-43ce-8a4c-bda3465a8d78" alt="morphet" width="150" height="150">
 
 ## Introduction
 Morphix is a Node.js command-line interface (CLI) tool designed to simplify file & directory manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type as well as create and delete directories.
