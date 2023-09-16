@@ -15,6 +15,8 @@ import {movefile} from './commands/moveFile.js';
 import {listfile} from './commands/listFiles.js';
 import {crtFolder} from './commands/createFolder.js';
 import {delFolder} from './commands/deleteFolder.js';
+import {compresDir, compresFile} from './commands/compress.js'
+import extractFile from './commands/decompress.js';
 
 // Implementing File commands
 program.command(`create`)
@@ -72,5 +74,20 @@ program.command(`deldir`)
     .argument(`<dirs...>`, 'Path of directory(s) to be deleted')
     .description('Delete directory(s)')
     .action(delFolder)
-    
+
+program.command(`comfil`)
+    .argument(`<fileName...>`, 'Path of file(s) to compress')
+    .description('Compress a file or dirctory')
+    .action(compresFile)
+
+program.command(`comdir`)
+    .argument(`<dirs...>`, 'Path of directory(s) to compress')
+    .description('Compress a directory')
+    .action(compresDir)
+
+program.command(`extract`)
+    .argument(`<fileNames...>`, 'Path to extract')
+    .description('Compress a directory')
+    .action(extractFile)
+
 program.parse(process.argv);
