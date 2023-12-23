@@ -16,7 +16,6 @@ import { listfile } from "./commands/listFiles.js";
 import { crtFolder } from "./commands/createFolder.js";
 import { delFolder } from "./commands/deleteFolder.js";
 import { compresDir, compresFile } from "./commands/compress.js";
-import extractFile from "./commands/test.js";
 
 // Implementing File commands
 program
