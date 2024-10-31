@@ -25,7 +25,7 @@ Morphet is a Node.js command-line interface (CLI) tool designed to simplify file
 - Node.js installed on your machine.
 
 ## Installation Guide
-Morphet can be installed via `npm` or `cloning the GitHub repo`
+Morphet can be installed via `npm` or `cloning the GitHub repository`
 
 ### GitHub
 1. Clone this repository to your local machine.
