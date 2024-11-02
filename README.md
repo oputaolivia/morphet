@@ -5,7 +5,7 @@
 ## Introduction
 Morphet is a Node.js command-line interface (CLI) tool designed to simplify file & directory manipulation tasks. With this tool, you can perform various file operations, such as creating, copying, moving, deleting, searching and even opening files using the default application associated with their file type as well as create and delete directories.
 
-## Features
+## Features of Morphet
 ### File Features
 - Create an empty file of any type
 - Write in an empty file/ Overwrite a file
